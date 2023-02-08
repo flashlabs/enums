@@ -1,0 +1,56 @@
+{
+    "name": "flashlabs/enums",
+    "description": "Tools to make work with PHP enums easier",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "3.14.2",
+        "phpstan/phpstan": "1.9.17",
+        "phpunit/phpunit": "9.6.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Flashlabs\\Enums\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Flashlabs\\Enums\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "stan": [
+            "php -d memory_limit=-1 vendor/bin/phpstan"
+        ],
+        "stan-test": [
+            "php -d memory_limit=-1 vendor/bin/phpstan analyse -c phpstan.test.neon"
+        ],
+        "cs-fix": [
+            "PHP_CS_FIXER_IGNORE_ENV=1 vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php"
+        ],
+        "cs-fix-test": [
+            "PHP_CS_FIXER_IGNORE_ENV=1 vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run"
+        ],
+        "phpunit": [
+            "php -d memory_limit=-1 vendor/bin/phpunit"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Marek Skopowski",
+            "email": "marek.skopowski@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "enums@flashlabs.pl",
+        "issues": "https://github.com/flashlabs/enums/issues",
+        "source": "https://github.com/flashlabs/enums"
+    }
+}

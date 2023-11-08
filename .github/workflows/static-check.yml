@@ -1,0 +1,17 @@
+name: Execute Static Code Analysis
+
+on: [ push ]
+
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: php-actions/composer@v6
+
+      - name: PHPStan Static Analysis
+        uses: php-actions/phpstan@v3
+        with:
+          path: src/
+          version: 1.9.17
+          php_version: 8.2.1

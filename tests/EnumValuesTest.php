@@ -27,7 +27,7 @@ final class EnumValuesTest extends TestCase
     }
 
     /** @return iterable<array<int, array<int|string|null>>> */
-    public function enumValuesDataProvider(): iterable
+    public static function enumValuesDataProvider(): iterable
     {
         yield 'StringsEnum' => [
             StringsEnum::values(), ['Tiramisu', 'Marshmallow', 'Oat cake'],

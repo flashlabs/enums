@@ -8,5 +8,8 @@
   "commitMessagePrefix": "RENOVATEBOT | ",
   "labels": [
     "chore"
+  ],
+  "ignoreDeps": [
+    "php"
   ]
 }

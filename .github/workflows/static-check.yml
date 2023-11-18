@@ -3,7 +3,7 @@ name: Execute Static Code Analysis
 on: [ push ]
 
 jobs:
-  static-check:
+  php-stan:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

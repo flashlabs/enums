@@ -13,5 +13,5 @@ jobs:
         uses: php-actions/phpstan@v3
         with:
           path: src/
-          version: 1.10.41
+          version: 1.10.44
           php_version: 8.2.1

@@ -8,7 +8,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "v3.48.0",
-        "phpstan/phpstan": "1.10.56",
+        "phpstan/phpstan": "1.10.60",
         "phpunit/phpunit": "10.5.12"
     },
     "config": {

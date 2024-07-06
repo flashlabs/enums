@@ -14,4 +14,4 @@ jobs:
         with:
           bootstrap: vendor/autoload.php
           configuration: phpunit.xml
-          version: 10.4.2
+          version: 11.2.5

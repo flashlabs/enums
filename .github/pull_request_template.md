@@ -1,6 +1,6 @@
 # What was changed
 
-I've ...
+I've 
 
 # Background
 

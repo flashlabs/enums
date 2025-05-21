@@ -9,7 +9,7 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "v3.67.0",
         "phpstan/phpstan": "2.1.1",
-        "phpunit/phpunit": "11.5.2"
+        "phpunit/phpunit": "11.5.21"
     },
     "config": {
         "optimize-autoloader": true,

@@ -6,11 +6,11 @@ jobs:
   php-stan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: php-actions/composer@v6
+      - uses: actions/checkout@v4.3.1
+      - uses: php-actions/composer@v6.1.2
 
       - name: PHPStan Static Analysis
-        uses: php-actions/phpstan@v3
+        uses: php-actions/phpstan@v3.0.3
         with:
           path: src/ tests/
           php_version: 8.2.1
